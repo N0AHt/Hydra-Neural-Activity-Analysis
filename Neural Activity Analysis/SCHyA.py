@@ -556,7 +556,7 @@ def SingleCellIntensity(neuron, video, positions, dimentionROI, Circle_radius, d
 #         print('mean: ', mean)
 #         print('max: ', np.max(image_out))
         intensities.append(mean)
-        positions_corrected.append(posit)
+        positions_corrected.append(positions[neuron][frame])
     if display_on == True:
         return intensities, positions_corrected, neuron_points, display
     else:
