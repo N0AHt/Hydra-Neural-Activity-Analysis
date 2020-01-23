@@ -5,4 +5,4 @@ Pipeline for tracking individual neurons, recording neural activity and processi
 
 Includes features analysing Hydra behaviour recordings made with DeepLabCut.
 
-:-)
+:)
