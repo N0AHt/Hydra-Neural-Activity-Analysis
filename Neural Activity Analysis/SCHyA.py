@@ -405,12 +405,17 @@ def give_cluster_assigns(df, numclust, transpose):
     return cluster_assigns
 
 #show all tracking info on neuron
-def single_neuron_investigation(neuron, signal, raster_array_dR, video, eval_frame, dim, posit_corrected):
+def single_neuron_investigation(neuron, signal, CaSignal, raster_array_dR, vid, eval_frame, dim, posit_corrected):
     print('Neuron: ', neuron)
 
     #intensity over time plot of the neuron
     plt.plot(signal[neuron])
     plt.title('Detrended Calcuim Signal')
+    plt.show()
+
+    #Denoised Ca signal plot
+    plt.plot(CaSignal[neuron])
+    plt.title('Denoised Ca Signal')
     plt.show()
 
     #Raster plot of neuron
