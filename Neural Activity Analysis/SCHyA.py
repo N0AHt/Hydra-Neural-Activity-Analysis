@@ -410,7 +410,7 @@ def single_neuron_investigation(neuron, signal, Foopsi_ca, raster_array_dR, vid,
 
     #intensity over time plot of the neuron
     plt.plot(signal[neuron])
-    plt.title('Detrended Calcuim Signal')
+    plt.title('Raw Intensity Signal')
     plt.show()
 
     #Denoised Ca signal plot
