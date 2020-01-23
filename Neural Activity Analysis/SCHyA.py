@@ -284,7 +284,7 @@ def Extract_Fluorescence(position_corrected, video, dimention):
     return intensities, position_updated
 
 #show all tracking info on neuron
-def full_eval(neuron, signal, eval_frame, dim, posit_corrected):
+def full_eval(neuron, signal, eval_frame, dim, posit_corrected, vid):
     #intensity over time plot of the neuron
     plt.plot(signal[neuron])
     plt.show()
