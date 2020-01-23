@@ -20,7 +20,6 @@ import scipy.cluster.hierarchy as shc
 from sklearn.cluster import AgglomerativeClustering
 import seaborn as sns
 import cv2
-import SCHyA as hy
 
 #Defining Functions - SHyGI Single-cell Hydra GCaMP Imaging package
 
