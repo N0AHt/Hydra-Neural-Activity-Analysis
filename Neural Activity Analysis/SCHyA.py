@@ -335,11 +335,11 @@ def detrend_all(input_array, polynomial_degree):
     return detrended
 
 #superimpose ROI onto video frame
-def Super_impose(video, frame_to_view, Title):
+def Super_impose(video, frame_to_view, positions, Title):
     vid = video
     plt.imshow(vid[frame_to_view])
-    for track in range(len(posit_corrected)):
-        plt.scatter(posit_corrected[track][frame_to_view][0],posit_corrected[track][frame_to_view][1], edgecolors = 'r',facecolors='none')
+    for track in range(len(positions)):
+        plt.scatter(positions[track][frame_to_view][0],positions[track][frame_to_view][1], edgecolors = 'r',facecolors='none')
     plt.title(Title)
     plt.show()
 
